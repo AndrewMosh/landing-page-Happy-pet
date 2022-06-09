@@ -1,0 +1,351 @@
+html,
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 2560px;
+  background: #ffc635;
+  background-size: 100% 100%;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.navbar img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 70%;
+}
+.nav-links a {
+  color: black;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 21px;
+  font-family: "Modern No. 20";
+  padding-bottom: 10px;
+}
+.menu li a:hover {
+  color: #ffffff;
+}
+.menu li {
+  padding: 5px 25px;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+.block1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.text {
+  padding: 120px 0 0 100px;
+}
+.text,
+h1,
+p,
+button {
+  text-align: left;
+  font-size: 33px;
+  font-family: "Montserrat";
+}
+.text h1 {
+  font-size: 65px;
+}
+.text button:hover {
+  background: #ffb702;
+  cursor: pointer;
+}
+.pooch {
+  width: 45%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  padding-right: 60px;
+}
+.block2 {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 130px;
+}
+.block2 h3 {
+  text-align: center;
+}
+.white img {
+  transform: scale(0.7);
+}
+.white {
+  width: 370px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.718);
+  border-radius: 30px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.white a h3,
+.cat a h3 {
+  color: black;
+}
+.cat {
+  width: 370px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.718);
+  border-radius: 30px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.cat img {
+  transform: scale(1.3);
+  position: absolute;
+  top: 50px;
+  left: 140px;
+}
+.text button {
+  width: 290px;
+  height: 70px;
+  background: linear-gradient(
+    272.92deg,
+    #fa3333 50.38%,
+    rgba(254, 87, 87, 0.99) 93.81%
+  );
+  border-radius: 41.11px;
+  color: white;
+  font-size: 21px;
+  border: 0;
+  text-align: center;
+}
+.contrib {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 12px;
+}
+.contrib a {
+  color: black;
+}
+@media all and (max-width: 425px) and (min-width: 320px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px 0 30px;
+  }
+  .navbar img {
+    width: 30%;
+    height: 100%;
+    max-width: 100%;
+    padding-top: 10px;
+  }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/corgibg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+  }
+  .text,
+  p,
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
+  .text {
+    padding: 30px 30px 30px 30px;
+  }
+  .text p {
+    padding-bottom: 20px;
+  }
+  .text h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .text button {
+    transform: scale(0.6);
+  }
+  .pooch {
+    display: none;
+  }
+  .block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .white {
+    transform: scale(0.7);
+  }
+  .cat {
+    transform: scale(0.7);
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(115.98deg, #ffc635 7.52%, #d39b0b 76.25%);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+    font-size: 20px;
+  }
+  .menu li:hover {
+    display: inline-block;
+    color: bisque;
+    transition: 0.3s ease;
+  }
+  .menu li {
+    border: 2px solid rgb(235, 196, 56);
+  }
+  .menu li:last-child {
+    display: none;
+  }
+  .menu li a {
+    color: rgb(0, 0, 0);
+  }
+  .menu li + li {
+    margin-top: 10px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+  }
+  .nav-links {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(115.98deg, #ffc635 7.52%, #d39b0b 76.25%);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+    font-size: 20px;
+  }
+  .menu li:hover {
+    display: inline-block;
+    color: bisque;
+    transition: 0.3s ease;
+  }
+  .menu li {
+    border: 2px solid rgb(235, 196, 56);
+  }
+  .menu li:last-child {
+    display: none;
+  }
+  .menu li a {
+    color: rgb(0, 0, 0);
+  }
+  .menu li + li {
+    margin-top: 10px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.6);
+    padding-bottom: 15px;
+  }
+  .nav-links {
+    padding: 0;
+  }
+  .block1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .text {
+    padding: 90px 0 0 30px;
+  }
+  .text,
+  h1,
+  p,
+  button {
+    text-align: left;
+  }
+  .text h1 {
+    font-size: 30px;
+  }
+  .text p {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .text button {
+    height: 50px;
+    width: 230px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .text button:hover {
+    background: #ffb702;
+    cursor: pointer;
+  }
+  .block2 {
+    gap: 0;
+  }
+  .white,
+  .cat {
+    margin: 20px;
+  }
+}
