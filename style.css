@@ -110,6 +110,12 @@ button {
   display: flex;
   flex-direction: column;
 }
+.white:hover {
+  transform: scale(1.1);
+}
+.cat:hover {
+  transform: scale(1.1);
+}
 .white a h3,
 .cat a h3 {
   color: black;
